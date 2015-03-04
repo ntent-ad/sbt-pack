@@ -11,7 +11,8 @@ NOTE: This fork adds packaging for Samza job archive and other Samza support.   
 ### Samza Archive Features
 
 - `sbt packSamzaArchive` generates `tar.gz` archive that is ready to deploy as a Samza package.
-- `sbt deploySamzaArchive` deploys Samza job package - WIP
+- `sbt deploySamzaArchive` deploys Samza job package for Yarn cluster - WIP
+- `sbt runSamzaJobs` runs Samza jobs - WIP
 
 ### Features
 
