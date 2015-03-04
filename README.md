@@ -3,6 +3,10 @@ sbt-pack plugin
 
 A sbt plugin for creating distributable Scala packages that include dependent jars and launch scripts.
 
+NOTE: This fork adds packaging for Samza job archive and other Samza support.   -Aki
+
+
+
 ### Features
 
 - `sbt pack` creates a distributable package in `target/pack` folder.
