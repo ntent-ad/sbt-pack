@@ -33,6 +33,7 @@ object PackBuild extends Build {
 
   def releaseResolver(v: String): Resolver = {
     val profile = System.getProperty("xerial.profile", "default")
+    val credentials = Credentials(Path.userHome + ".ivy2-credentials")
     profile match {
       case "default" => {
         val nexus = "http://nexus.cb.ntent.com/nexus/"
