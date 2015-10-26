@@ -35,11 +35,11 @@ object PackBuild extends Build {
     val profile = System.getProperty("xerial.profile", "default")
     profile match {
       case "default" => {
-        val nexus = "https://oss.sonatype.org/"
+        val nexus = "http://nexus.cb.ntent.com/nexus/"
         if (v.trim.endsWith("SNAPSHOT"))
-          "snapshots" at nexus + "content/repositories/snapshots"
+          "snapshots" at nexus + "content/repositories/ntent-3rd-party-snapshot"
         else
-          "releases" at nexus + "service/local/staging/deploy/maven2"
+          "releases" at nexus + "content/repositories/ntent-3rd-party-release"
       }
       case p => {
         sys.error("unknown xerial.profile:%s".format(p))
