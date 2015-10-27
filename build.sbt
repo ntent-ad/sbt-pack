@@ -1,5 +1,8 @@
 import SonatypeKeys._
 
-sonatypeSettings
+//sonatypeSettings
 
 profileName := "org.xerial"
+
+credentials += Credentials(Path.userHome / ".ivy2-credentials")
+
